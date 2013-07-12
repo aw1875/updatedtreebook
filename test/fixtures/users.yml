@@ -3,3 +3,9 @@ adam:
  last_name: "Wolf"
  email: "wolfynganev@gmail.com"
  profile_name: "wolfy99"
+
+bob:
+ first_name: "Bob"
+ last_name: "Urmom"
+ email: "boburmom@yahoo.com"
+ profile_name: "boburmom"
