@@ -27,12 +27,13 @@
 		</div>
 	</div>
 	<div class="container">
-		<p class="notice"><%= notice %></p>
-		<div class="alert alert-block alert-success">
-		  <button type="button" class="close" data-dismiss="alert">&times;</button>
-		  <center>Welcome to Treebook!</center>
-		</div>
-		<p class="alert"><%= alert %></p>
+		<% flash.each do |type, message| %>
+			<div class="alert <%= flash_class type %>">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<%= message %>
+			</div>
+		<% end %>
+
 		<%= yield %>
 	</div>
 
